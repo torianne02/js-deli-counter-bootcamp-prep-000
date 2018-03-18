@@ -23,9 +23,9 @@ function currentLine(katzDeliLine) {
   var output = [];
   if (katzDeliLine.length > 0) {
     for (var i = 0; i < katzDeliLine.length; i++) {
-      output.push((i + 1) + ". " + katzDeliLine[i]);
+      output.push((i + 1) + ". " + katzDeliLine[i] + " ");
     }
-    return "The line is currently: " + output.toString() + " ";
+    return "The line is currently: " + output.toString();
   }
   else {
    return "The line is currently empty."
