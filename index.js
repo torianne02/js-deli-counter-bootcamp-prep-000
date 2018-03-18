@@ -11,7 +11,7 @@ function nowServing(deliLine) {
   var nextUp = "";
   if (katzDeliLine.length > 0) {
       nextUp += "Currently serving " + katzDeliLine[0] + ".";
-      var deliLine = katzDeliLine.slice(1, katzDeliLine.length);
+      deliLine.slice(1, deliLine.length);
   }
   else {
       nextUp += "There is nobody waiting to be served!"
