@@ -8,10 +8,12 @@ function takeANumber(katzDeliLine, name) {
   }
 }
 function nowServing(katzDeliLine) {
+  var nextUp = "";
   if (katzDeliLine.length > 0) {
     for (var i = 0; i < katzDeliLine.length; i++) {
-      return "Currently serving " + katzDeliLine[0] + ".";
-      katzDeliLine.shift();
+      nextUp += "Currently serving " + katzDeliLine[0] + ".";
+      katzDeliLine.slice(1, katzDeliLine.length);
+      return nextUp;
     }
   }
   else {
