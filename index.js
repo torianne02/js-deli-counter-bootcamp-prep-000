@@ -16,5 +16,5 @@ function nowServing(katzDeliLine) {
       nextUp += "There is nobody waiting to be served!"
   }
   katzDeliLine = katzDeliLine.slice(1, katzDeliLine.length);  
-  return nextUp;
+  return nextUp && katzDeliLine;
 }
