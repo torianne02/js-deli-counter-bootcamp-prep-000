@@ -7,19 +7,20 @@ function takeANumber(katzDeliLine, name) {
     }
   }
 }
+
 function nowServing(deliLine) {
   var nextUp = "";
   if (deliLine.length > 0) {
       nextUp += "Currently serving " + deliLine[0] + ".";
-      deliLine = deliLine.slice(1, deliLine.length);
-      
+      deliLine.shift();
   }
   else {
       nextUp += "There is nobody waiting to be served!"
       
   }
-  return nextUp
+  return nextUp;
 }
+
 function currentLine(katzDeliLine) {
   var output = [];
   if (katzDeliLine.length > 0) {
