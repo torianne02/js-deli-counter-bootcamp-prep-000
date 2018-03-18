@@ -9,8 +9,8 @@ function takeANumber(katzDeliLine, name) {
 }
 function nowServing(deliLine) {
   var nextUp = "";
-  if (katzDeliLine.length > 0) {
-      nextUp += "Currently serving " + katzDeliLine[0] + ".";
+  if (deliLine.length > 0) {
+      nextUp += "Currently serving " + deliLine[0] + ".";
       deliLine.slice(1, deliLine.length);
   }
   else {
