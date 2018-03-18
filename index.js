@@ -12,7 +12,6 @@ function nowServing(katzDeliLine) {
   if (katzDeliLine.length > 0) {
       nextUp += "Currently serving " + katzDeliLine[0] + ".";
       katzDeliLine = katzDeliLine.slice(1, katzDeliLine.length);
-      console.log(katzDeliLine);
   }
   else {
       nextUp += "There is nobody waiting to be served!"
