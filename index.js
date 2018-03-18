@@ -12,7 +12,7 @@ function nowServing(katzDeliLine) {
   if (katzDeliLine.length > 0) {
     for (var i = 0; i < katzDeliLine.length; i++) {
       nextUp += "Currently serving " + katzDeliLine[0] + ".";
-      katzDeliLine.slice(1, katzDeliLine.length);
+      console.log(katzDeliLine.slice(1, katzDeliLine.length));
       return nextUp;
     }
   }
