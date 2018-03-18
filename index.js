@@ -11,10 +11,11 @@ function nowServing(deliLine) {
   var nextUp = "";
   if (deliLine.length > 0) {
       nextUp += "Currently serving " + deliLine[0] + ".";
-      return deliLine.slice(1, deliLine.length);
+      return nextUp;
   }
   else {
       nextUp += "There is nobody waiting to be served!"
+      return nextUp;
   }
-  return nextUp;
+  return deliLine.slice(1, deliLine.length);
 }
