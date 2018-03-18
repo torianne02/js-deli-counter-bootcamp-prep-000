@@ -10,13 +10,11 @@ function takeANumber(katzDeliLine, name) {
 function nowServing(katzDeliLine) {
   var nextUp = "";
   if (katzDeliLine.length > 0) {
-    for (var i = 0; i < katzDeliLine.length; i++) {
       nextUp += "Currently serving " + katzDeliLine[0] + ".";
-      console.log(katzDeliLine.slice(1, katzDeliLine.length));
-      return nextUp;
-    }
+      katzDeliLine = katzDeliLine.slice(1, katzDeliLine.length);
   }
   else {
-      return "There is nobody waiting to be served!"
+      nextUp += "There is nobody waiting to be served!"
   }
+  return nextUp;
 }
