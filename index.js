@@ -17,5 +17,5 @@ function nowServing(deliLine) {
       nextUp += "There is nobody waiting to be served!"
       return nextUp;
   }
-  return deliLine.slice(1, deliLine.length);
+  deliLine.slice(1, deliLine.length);
 }
