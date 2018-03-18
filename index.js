@@ -8,13 +8,13 @@ function takeANumber(katzDeliLine, name) {
   }
 }
 function nowServing(katzDeliLine) {
-  if (katzDeliLine === []) {
-    return "There is nobody waiting to be served!"
-  }
-  else {
+  if (katzDeliLine.length > 0) {
     for (var i = 0; i < katzDeliLine.length; i++) {
       return katzDeliLine[0];
     }
-    katzDeliLine.shift();
   }
+  else {
+      return "There is nobody waiting to be served!"
+  }
+  katzDeliLine.shift();
 }
